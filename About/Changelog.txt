@@ -1,0 +1,5 @@
+# Changelog for DireRaids
+
+1.5.0 - First publish
+Used DeepL to update translations for ChineseSimplified, French, German, Japanese, Polish, Portuguese, Russian, Spanish
+
