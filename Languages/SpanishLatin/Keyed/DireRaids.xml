@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <!-- The definition isn't picked up even with DefInjected, so they're duplicated here -->
   <DireRaidEnemy.label>incursión extrema del enemigo</DireRaidEnemy.label>

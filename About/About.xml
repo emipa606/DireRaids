@@ -18,6 +18,7 @@
 Update of Pyrces mod https://steamcommunity.com/sharedfiles/filedetails/?id=1542379675
 
 - Removed the HugsLib dependency
+- Added option to ignore mechanoid raids
 
 [img]https://i.imgur.com/pufA0kM.png[/img]
 
@@ -42,8 +43,8 @@ By default the Dire Raid event is rare and can't occur back-to-back. Dire raids 
 If you load this module after HugsLib you can configure the difficulty and occurrance of the mod in the Mod Options menu. Changing Danger Multiplier value modifies the multiplier against pawn strength pool used to generate raids.
 
 
-[h1]Required Mods[/h1]
-- Hugs Lib (loaded before DireRaids)
+[strike][h1]Required Mods[/h1]
+- Hugs Lib (loaded before DireRaids)[/strike]
 
 
 [h1]Supported Versions[/h1]
@@ -99,6 +100,8 @@ Link me translation fixes/additions and I'll add them in.
 [*] Do not report errors by making a discussion-thread, I get no notification of that.
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [*] Use [url=https://github.com/RimSort/RimSort/releases/latest]RimSort[/url] to sort your mods
-[/list]</description>
-  <modVersion IgnoreIfNoMatchingField="True">1.5.0</modVersion>
+[/list] 
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3259909708][img]https://img.shields.io/github/v/release/emipa606/DireRaids?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | tags:  big threat</description>
+  <modVersion IgnoreIfNoMatchingField="True">1.5.1</modVersion>
 </ModMetaData>

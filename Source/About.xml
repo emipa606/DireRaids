@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Dire Raids</name>
   <author>Pyrce</author>
@@ -55,7 +55,7 @@ If you load this module after HugsLib you can configure the difficulty and occur
 
 [b]DireRaids never seem to occur. Are they super rare?[/b]
 
-    Well, remember that they're more rare than regular raids and require a minimum base value / time to pass before triggering. You can adjust these mod settings with HugLib under Options -&gt; Mod Settings if you want more frequent occurances. You can also use the debug tools to trial run the next several events and see if it would roll DireRaids once in a while for your setup.
+    Well, remember that they're more rare than regular raids and require a minimum base value / time to pass before triggering. You can adjust these mod settings with HugLib under Options -> Mod Settings if you want more frequent occurances. You can also use the debug tools to trial run the next several events and see if it would roll DireRaids once in a while for your setup.
 
 
 [h1]Current (Sometimes Crude) Translations[/h1]

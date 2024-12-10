@@ -11,6 +11,7 @@ internal class DireRaidsSettings : ModSettings
     public int minPopulation = 1;
     public int minRefireDays = 60;
     public int minThreatPoints = 2000;
+    public bool noMechs;
     public float pointMult = 3f;
 
     /// <summary>
@@ -24,5 +25,6 @@ internal class DireRaidsSettings : ModSettings
         Scribe_Values.Look(ref minPopulation, "minPopulation", 1);
         Scribe_Values.Look(ref baseChance, "baseChance", 1.8f);
         Scribe_Values.Look(ref pointMult, "pointMult", 3f);
+        Scribe_Values.Look(ref noMechs, "noMechs");
     }
 }

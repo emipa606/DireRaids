@@ -74,6 +74,8 @@ internal class DireRaidsMod : Mod
             10000f,
             false, Settings.minThreatPoints.ToString());
         listing_Standard.Gap();
+        listing_Standard.CheckboxLabeled("DireRaids.NoMechs".Translate(), ref Settings.noMechs);
+        listing_Standard.Gap();
         if (listing_Standard.ButtonText("DireRaids.Reset".Translate()))
         {
             Settings.pointMult = 3f;
@@ -81,6 +83,7 @@ internal class DireRaidsMod : Mod
             Settings.minRefireDays = 60;
             Settings.minPopulation = 1;
             Settings.minThreatPoints = 2000;
+            Settings.noMechs = false;
         }
 
         if (currentVersion != null)
