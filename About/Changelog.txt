@@ -1,5 +1,8 @@
 # Changelog for DireRaids
 
+1.6.0 - Mod updated for 1.6 and passed autotests
+
+
 1.5.1 - Added option to not modify mechanoid raids
 Used DeepL to update translations for ChineseSimplified, French, German, Japanese, Polish, Portuguese, Russian, Spanish
 

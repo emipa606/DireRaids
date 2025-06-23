@@ -10,20 +10,20 @@ public class IncidentWorker_DireRaidEnemy : IncidentWorker_RaidEnemy
     protected override void ResolveRaidPoints(IncidentParms parms)
     {
         base.ResolveRaidPoints(parms);
-        if (DireRaidsMod.instance.Settings.noMechs && parms.faction == Faction.OfMechanoids)
+        if (DireRaidsMod.Instance.Settings.NoMechs && parms.faction == Faction.OfMechanoids)
         {
             Log.Message("[DireRaids] points not changed, mechanoid raid");
             return;
         }
 
         var points = parms.points;
-        parms.points *= DireRaidsMod.instance.Settings.pointMult;
+        parms.points *= DireRaidsMod.Instance.Settings.PointMult;
         Log.Message($"[DireRaids] points recalculated: {points} to {parms.points}");
     }
 
     protected override string GetLetterLabel(IncidentParms parms)
     {
-        if (DireRaidsMod.instance.Settings.noMechs && parms.faction == Faction.OfMechanoids)
+        if (DireRaidsMod.Instance.Settings.NoMechs && parms.faction == Faction.OfMechanoids)
         {
             return base.GetLetterLabel(parms);
         }
@@ -33,7 +33,7 @@ public class IncidentWorker_DireRaidEnemy : IncidentWorker_RaidEnemy
 
     protected override string GetLetterText(IncidentParms parms, List<Pawn> pawns)
     {
-        if (DireRaidsMod.instance.Settings.noMechs && parms.faction == Faction.OfMechanoids)
+        if (DireRaidsMod.Instance.Settings.NoMechs && parms.faction == Faction.OfMechanoids)
         {
             return base.GetLetterText(parms, pawns);
         }

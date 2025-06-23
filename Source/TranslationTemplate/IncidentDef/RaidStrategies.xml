@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: enemy dire raid -->
+  <DireRaidEnemy.label>enemy dire raid</DireRaidEnemy.label>
+  <!-- EN: Dire Raid! -->
+  <DireRaidEnemy.letterLabel>Dire Raid!</DireRaidEnemy.letterLabel>
+  <!-- EN: A much larger threat approaches. The danger appears to be dire! -->
+  <DireRaidEnemy.letterText>A much larger threat approaches. The danger appears to be dire!</DireRaidEnemy.letterText>
+</LanguageData>

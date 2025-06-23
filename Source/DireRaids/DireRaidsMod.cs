@@ -10,7 +10,7 @@ internal class DireRaidsMod : Mod
     /// <summary>
     ///     The instance of the settings to be read by the mod
     /// </summary>
-    public static DireRaidsMod instance;
+    public static DireRaidsMod Instance;
 
     private static string currentVersion;
 
@@ -20,7 +20,7 @@ internal class DireRaidsMod : Mod
     /// <param name="content"></param>
     public DireRaidsMod(ModContentPack content) : base(content)
     {
-        instance = this;
+        Instance = this;
         Settings = GetSettings<DireRaidsSettings>();
         currentVersion = VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
     }
@@ -50,40 +50,40 @@ internal class DireRaidsMod : Mod
         listing_Standard.Begin(rect);
         listing_Standard.Label("DireRaids.DangerSetting".Translate(), -1,
             "DireRaids.DangerSettingDescription".Translate());
-        Settings.pointMult = Widgets.HorizontalSlider(listing_Standard.GetRect(20), Settings.pointMult, 0.1f, 10f,
-            false, Settings.pointMult.ToStringDecimalIfSmall());
+        Settings.PointMult = Widgets.HorizontalSlider(listing_Standard.GetRect(20), Settings.PointMult, 0.1f, 10f,
+            false, Settings.PointMult.ToStringDecimalIfSmall());
         listing_Standard.Gap();
         listing_Standard.Label("DireRaids.BaseChance".Translate(), -1, "DireRaids.BaseChanceDescription".Translate());
-        Settings.baseChance = Widgets.HorizontalSlider(listing_Standard.GetRect(20), Settings.baseChance, 0.1f, 10f,
-            false, Settings.baseChance.ToStringDecimalIfSmall());
+        Settings.BaseChance = Widgets.HorizontalSlider(listing_Standard.GetRect(20), Settings.BaseChance, 0.1f, 10f,
+            false, Settings.BaseChance.ToStringDecimalIfSmall());
         listing_Standard.Gap();
         listing_Standard.Label("DireRaids.MinRefire".Translate(), -1, "DireRaids.MinRefireDescription".Translate());
-        Settings.minRefireDays = (int)Widgets.HorizontalSlider(listing_Standard.GetRect(20), Settings.minRefireDays, 1f,
+        Settings.MinRefireDays = (int)Widgets.HorizontalSlider(listing_Standard.GetRect(20), Settings.MinRefireDays, 1f,
             300f,
-            false, Settings.minRefireDays.ToString());
+            false, Settings.MinRefireDays.ToString());
         listing_Standard.Gap();
         listing_Standard.Label("DireRaids.MinPopulation".Translate(), -1,
             "DireRaids.MinPopulationDescription".Translate());
-        Settings.minPopulation = (int)Widgets.HorizontalSlider(listing_Standard.GetRect(20), Settings.minPopulation, 1f,
+        Settings.MinPopulation = (int)Widgets.HorizontalSlider(listing_Standard.GetRect(20), Settings.MinPopulation, 1f,
             30f,
-            false, Settings.minPopulation.ToString());
+            false, Settings.MinPopulation.ToString());
         listing_Standard.Gap();
         listing_Standard.Label("DireRaids.MinThreat".Translate(), -1, "DireRaids.MinThreatDescription".Translate());
-        Settings.minThreatPoints = (int)Widgets.HorizontalSlider(listing_Standard.GetRect(20), Settings.minThreatPoints,
+        Settings.MinThreatPoints = (int)Widgets.HorizontalSlider(listing_Standard.GetRect(20), Settings.MinThreatPoints,
             100f,
             10000f,
-            false, Settings.minThreatPoints.ToString());
+            false, Settings.MinThreatPoints.ToString());
         listing_Standard.Gap();
-        listing_Standard.CheckboxLabeled("DireRaids.NoMechs".Translate(), ref Settings.noMechs);
+        listing_Standard.CheckboxLabeled("DireRaids.NoMechs".Translate(), ref Settings.NoMechs);
         listing_Standard.Gap();
         if (listing_Standard.ButtonText("DireRaids.Reset".Translate()))
         {
-            Settings.pointMult = 3f;
-            Settings.baseChance = 1.8f;
-            Settings.minRefireDays = 60;
-            Settings.minPopulation = 1;
-            Settings.minThreatPoints = 2000;
-            Settings.noMechs = false;
+            Settings.PointMult = 3f;
+            Settings.BaseChance = 1.8f;
+            Settings.MinRefireDays = 60;
+            Settings.MinPopulation = 1;
+            Settings.MinThreatPoints = 2000;
+            Settings.NoMechs = false;
         }
 
         if (currentVersion != null)

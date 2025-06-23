@@ -14,9 +14,9 @@ public static class DireRaids
     public static void ApplySettings()
     {
         var incidentDef = IncidentDef.Named("DireRaidEnemy");
-        incidentDef.baseChance = DireRaidsMod.instance.Settings.baseChance;
-        incidentDef.minRefireDays = DireRaidsMod.instance.Settings.minRefireDays;
-        incidentDef.minThreatPoints = DireRaidsMod.instance.Settings.minThreatPoints;
-        incidentDef.minPopulation = DireRaidsMod.instance.Settings.minPopulation;
+        incidentDef.baseChance = DireRaidsMod.Instance.Settings.BaseChance;
+        incidentDef.minRefireDays = DireRaidsMod.Instance.Settings.MinRefireDays;
+        incidentDef.minThreatPoints = DireRaidsMod.Instance.Settings.MinThreatPoints;
+        incidentDef.minPopulation = DireRaidsMod.Instance.Settings.MinPopulation;
     }
 }
